@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Editor CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+
+        <div class="controls">
+            <label for="flexDirection">flex-direction:</label>
+            <select class="flex-direction" id="flexDirection">
+                <option value="row">row</option>
+                <option value="column">column</option>
+                <option value="row-reverse">row Reverse</option>
+                <option value="column-reverse">column Reverse</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <textarea id="cssEditor" rows="10" cols="50" placeholder="Digite seu CSS aqui"></textarea>
+            <div id="suggestions"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
